@@ -45,6 +45,8 @@ class WeixinInterface:
 			content=xml.find("Content").text
 			return self.render.reply_text(fromUser,toUser,int(time.time()), content)
 		elif msgType == 'image':
-			pass
+			content=xml.find("Content").text
+			return self.render.reply_text(fromUser,toUser,int(time.time()), content)
 		else:
-			pass
+			content=xml.find("Content").text
+			return self.render.reply_text(fromUser,toUser,int(time.time()), content)
