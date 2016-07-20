@@ -43,7 +43,7 @@ class WeixinInterface:
 			return self.render.reply_text(fromUser,toUser,int(time.time()),content)
 			if(content == u"天气"):
 				pass
-		elif mstType == 'image':
+		elif msgType == 'image':
 			pass
 		else:
 			pass
