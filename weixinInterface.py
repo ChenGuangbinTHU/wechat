@@ -40,7 +40,8 @@ class WeixinInterface:
 		fromUser=xml.find("FromUserName").text 
 		toUser=xml.find("ToUserName").text 
 		content=xml.find("Content").text
-		return self.render.reply_text(fromUser,toUser,int(time.time()), content)
+		return ''
+		#return self.render.reply_text(fromUser,toUser,int(time.time()), content)
 		# if msgType == 'text':
 			# content=xml.find("Content").text
 			# return self.render.reply_text(fromUser,toUser,int(time.time()), content)
